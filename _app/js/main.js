@@ -1,3 +1,3 @@
-import Module from './modules/module.js';
+import memoryGame from './modules/memoryGame.js';
 
-Module();
+memoryGame();
