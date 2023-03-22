@@ -1,3 +1,8 @@
 body {
 	font-size: 125%;
 }
+
+img {
+	width: 8rem;
+	background: pink;
+}
