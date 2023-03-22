@@ -1,3 +1,14 @@
 .header__container {
-	background: grey;
+	display: flex;
+	justify-content: center;
+	height: 5rem;
+	padding: 3rem;
+	margin-bottom: 3rem;
+	background: rgba(179, 255, 164, 0.675);
+}
+
+.header__headline {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }

@@ -1,0 +1,31 @@
+.grid__container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.memory__card {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: none;
+	margin: 1rem;
+}
+
+.memory__card:hover {
+	transition: 0.3s;
+	background: rgb(238, 137, 246);
+	cursor: pointer;
+	border-radius: 1rem;
+}
+
+
+.game__top {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.result__win {
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
