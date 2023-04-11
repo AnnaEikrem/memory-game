@@ -1,5 +1,9 @@
 import { cardArray } from "./cardData.js";
 
+/**
+ * @todo Fix bug: If you click the card to fast, it push two cards in the array, and see is as 'one pair'. 
+ */
+
 export default function memoryGame() {
 	const imagesContainer = document.querySelector('.grid__container');
 	const resultContainer = document.querySelector('.game__result');
@@ -34,8 +38,6 @@ export default function memoryGame() {
 		cardsChosen.push(cardArray[cardId].name);
 		cardsChosenIds.push(cardId);
 
-
-		// Bug: if you click before and match before the timer is out, the chosen card (not in paur), will not flip back
 		if(cardsChosen.length === 2) {
 			setTimeout(checkMatch, 500);
 		}
@@ -44,9 +46,6 @@ export default function memoryGame() {
 	function checkMatch() {
 		const allMemoryCards = document.querySelectorAll('.memory__card');
 
-
-
-		// Bug: if you click the same image, the same index will be logged and the card will 'flip', even though you just clicked one card. 
 		if(cardsChosen[0] === cardsChosen[1]) {
 			allMemoryCards[cardsChosenIds[0]].setAttribute('src', './_app/assets/sprites/red-blob.png');
 			allMemoryCards[cardsChosenIds[1]].setAttribute('src', './_app/assets/sprites/red-blob.png')

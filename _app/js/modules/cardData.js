@@ -48,5 +48,3 @@ export const cardArray = [
 		image: '/_app/assets/sprites/puppy.png',
 	}
 ]
-
-// console.log(cardArray)
